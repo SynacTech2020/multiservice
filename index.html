@@ -9,8 +9,10 @@
   <title>AMS</title>
 
   <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700&display=swap" rel="stylesheet">
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <!-- Template CSS -->
+  <script src="assets/sweetalert2-10.9.0/package/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="assets/sweetalert2-10.9.0/package/dist/sweetalert2.min.css">
   <link rel="stylesheet" href="assets/css/style-starter.css">
 </head>
 
@@ -515,7 +517,35 @@
   <!-- disable body scroll which navbar is in active -->
 
   <script src="assets/js/bootstrap.min.js"></script>
-
+<script>
+  Swal.mixin({
+    input: 'text',
+    position: 'top',
+    confirmButtonText: 'Next &rarr;',
+    showCancelButton: true,
+    progressSteps: ['1', '2', '3']
+  }).queue([
+    {
+      title: 'Question 1',
+      text: 'Chaining swal2 modals is easy'
+    },
+    'Question 2',
+    'Question 3'
+  ]).then((result) => {
+    if (result.value) {
+      const answers = JSON.stringify(result.value)
+      Swal.fire({
+        title: 'All done!',
+        position: 'top',
+        html: `
+          Your answers:
+          <pre><code>${answers}</code></pre>
+        `,
+        confirmButtonText: 'Lovely!'
+      })
+    }
+  })
+</script>
 </body>
 
 </html>
