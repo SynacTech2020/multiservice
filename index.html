@@ -518,33 +518,31 @@
 
   <script src="assets/js/bootstrap.min.js"></script>
 <script>
-  Swal.mixin({
-    input: 'text',
-    position: 'top',
-    confirmButtonText: 'Next &rarr;',
-    showCancelButton: true,
-    progressSteps: ['1', '2', '3']
-  }).queue([
-    {
-      title: 'Question 1',
-      text: 'Chaining swal2 modals is easy'
-    },
-    'Question 2',
-    'Question 3'
-  ]).then((result) => {
-    if (result.value) {
-      const answers = JSON.stringify(result.value)
-      Swal.fire({
-        title: 'All done!',
-        position: 'top',
-        html: `
-          Your answers:
-          <pre><code>${answers}</code></pre>
-        `,
-        confirmButtonText: 'Lovely!'
-      })
-    }
-  })
+ (async () => {
+
+const { value: email } = await Swal.fire({
+  title: 'Input email address',
+  input: 'email',
+  inputLabel: 'Your email address',
+  inputPlaceholder: 'Enter your email address',
+  inputAttributes: {
+    autocapitalize: 'off'
+  },
+  showCloseButton: true,
+  position:'top',
+})
+
+if (email) {
+  // Swal.fire(`Entered email: ${email}`)
+  sessionStorage.setItem('mail',email)
+ console.log(sessionStorage)
+
+}
+
+})()
+ 
+  
+ 
 </script>
 </body>
 
