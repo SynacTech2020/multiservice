@@ -11036,7 +11036,7 @@ h4.title-left {
   margin-bottom: 20px; }
 
 .w3l-features {
-  background: #f8f9fa; }
+  background: #eef5fd; }
 
 .w3l-stats {
   background: #fff;
@@ -11286,14 +11286,14 @@ p.stats-text {
 
 .w3l-about-breadcrumb .breadcrumb-bg-about {
   background-size: cover;
-  background-image: linear-gradient(to right, #17449e, rgba(26, 35, 129, 0.6)), url(../images/breadcrumbbg.jpg);
+  background-image: linear-gradient(to right, #17449e, rgba(26, 35, 129, 0.6)), url(../images/4.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   background-attachment: fixed; }
 
 .w3l-about-breadcrumb .breadcrumb-bg-services {
   background-size: cover;
-  background-image: linear-gradient(to right, #17449e, rgba(26, 35, 129, 0.6)), url(../images/banner1.jpg);
+  background-image: linear-gradient(to right, #17449e, rgba(26, 35, 129, 0.6)), url(../images/12.jpeg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   background-attachment: fixed; }
