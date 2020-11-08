@@ -536,13 +536,28 @@ if (email) {
   // Swal.fire(`Entered email: ${email}`)
   sessionStorage.setItem('mail',email)
  console.log(sessionStorage)
-
+//  var formData = new FormData();
+// formData.append("mails", email);
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbz6l_2kzbccXifRyyjABHIuMraPJxxzWEqUbPERoyG9ldEPs9t7/exec'
+// fetch(scriptURL, { method: 'GET' , header :"Access-Control-Allow-Origin: *" , body: formData })
+//           .then((response) => alert('Done'))
+//           .catch(error => console.error('Error!', error.message))
 }
 
 })()
- 
-  
- 
+
+// function data_send(data){
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbz6l_2kzbccXifRyyjABHIuMraPJxxzWEqUbPERoyG9ldEPs9t7/exec'
+//       form.addEventListener('submit', e => {
+//         e.preventDefault()
+//         fetch(scriptURL, { method: 'POST', body: data,header :"Access-Control-Allow-Origin: *" })
+//           .then((response) => alert('Done'))
+//           .catch(error => console.error('Error!', error.message))
+//       })
+
+//       var conceptName = $('#aioConceptName').find(":selected").text();
+//     }
+
 </script>
 </body>
 
