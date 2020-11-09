@@ -10817,7 +10817,7 @@ ul.icon-rounded.address li p span.fa {
     min-height: 160px; } }
 
 .w3l-apply-6 .apply-info {
-  background: url(../images/appointment.jpg) no-repeat center;
+  /* background: url(../images/appointment.jpg) no-repeat center; */
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -11314,7 +11314,7 @@ p.stats-text {
 
 .w3l-about-breadcrumb .breadcrumb-bg-contact {
   background-size: cover;
-  background-image: linear-gradient(to right, #17449e, rgba(26, 35, 129, 0.6)), url(../images/appointment.jpg);
+  background-image: linear-gradient(to right, #17449e, rgba(26, 35, 129, 0.6));
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   background-attachment: fixed; }
@@ -11903,4 +11903,3 @@ h3.w3ls-title {
 }
 
 /* //why */
-
