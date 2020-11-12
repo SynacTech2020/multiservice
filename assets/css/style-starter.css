@@ -11768,7 +11768,7 @@ p.stats-text {
   .w3l-services-1 a.feature-link span.fa {
     transition: 0.3s ease; }
   .w3l-services-1 a.feature-link:hover span.fa {
-    padding-left: 3px;
+    /* padding-left: 3px; */
     transition: 0.3s ease-out; }
   @media (max-width: 800px) {
     .w3l-services-1 .services-title h3 {
