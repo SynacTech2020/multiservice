@@ -10030,18 +10030,12 @@ h3.title {
   width: 100%;
   z-index: 1;
   }
-.new-anime{
-  -webkit-animation-name: slide_animation;
-  -webkit-animation-duration: 33s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-play-state: running; 
-}
+
 
 .owl-carousel .owl-stage {
   position: relative;
   -webkit-animation-name: slide_animation;
-  -webkit-animation-duration: 33s;
+  -webkit-animation-duration: 22s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
   -webkit-animation-play-state: running; 
@@ -10297,12 +10291,12 @@ button.owl-next {
 @-webkit-keyframes slide_animation{
   0% {right:0px;}
   10%{right:0px;}
-  20% {right:1200px;}
-  30% {right:1200px;}
-  40% {right:2400px;}
-  50% {right:2400px;}
-  60% {right:1200px;}
-  70% {right:1200px;}
+  20% {right:0px;}
+  30% {right:100%;}
+  40% {right:100%;}
+  50% {right:100%;}
+  60% {right:100%;}
+  70% {right:100%;}
   80% {right:0px;}
   90% {right:0px;}
   100% {right:0px;}
@@ -10398,8 +10392,7 @@ button.owl-next {
 
 .w3l-main-slider .banner-top1 {
   background: url(../images/10.jpeg) no-repeat center;
-  background-size: cover; 
-}
+  background-size: cover; }
 
 .w3l-main-slider .banner-top2 {
   background: url(../images/11.jpeg) no-repeat center;
