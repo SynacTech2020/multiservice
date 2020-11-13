@@ -10264,7 +10264,7 @@ h3.title {
   border-radius: 30px;
   position: relative; }
 
-/*button.owl-next,
+button.owl-next,
 button.owl-prev {
   position: absolute;
   bottom: 50%; }
@@ -10274,7 +10274,7 @@ button.owl-prev {
 
 button.owl-next {
   right: 0px; }
-*/
+
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #17449e; }
