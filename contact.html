@@ -150,14 +150,12 @@
       <h3 class="title mb-4">Drop Us a Message</h3>
       <div class="row">
         <div class="col-md-8 contact-form">
-          <form action="https://sendmail.w3layouts.com/submitForm" method="post">
+          <form>
             <input type="text" class="form-control" name="w3lName" placeholder="Name" /><br />
             <input type="email" class="form-control" name="w3lSender" placeholder="E-mail" /><br />
             <input type="text" class="form-control" name="w3lSubject" placeholder="Equipment Name" /><br />
-            <textarea class="form-control" name="w3lMessage" placeholder="Your requirements"
-              style="height:150px;"></textarea><br />
             <div class="">
-              <button class="btn btn-primary btn-style" type="submit">Submit now</button>
+              <button class="btn btn-primary btn-style" onclick="send_data()" type="submit">Submit now</button>
             </div>
           </form>
         </div>
@@ -219,7 +217,7 @@
                 <li>PUSHPANJALI HOSPITAL SHIUR BANGLA</li>
                 <li>SAIKRISHNA HOSPITAL</li>
                 <li>SANT EKNATH HOSPITAL PITHAN</li>
-                <li>C.P QUARENTINE CENTER</li>
+                <li>C.P. OFFICE QUARANTINE CENTER</li>
                 <li>COIVID19 HOSPITAL AURANGABAD</li>
               </ul>
             </div>
@@ -343,6 +341,7 @@
       })
     })
   </script>
+
   <!-- //script -->
 
   <!-- disable body scroll which navbar is in active -->
@@ -354,7 +353,7 @@
     });
   </script>
   <!-- disable body scroll which navbar is in active -->
-
+  <script src="assets/js/wp_intregate.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
 
 </body>
