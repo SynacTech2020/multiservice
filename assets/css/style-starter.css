@@ -9959,7 +9959,7 @@ h3.title {
   .w3l-bootstrap-header a.navbar-brand img {
     width: 50px; }
   .w3l-bootstrap-header a.navbar-brand {
-    font-size: 30px; } }
+    font-size: 20px; } }
 
 @media (max-width: 384px) {
   .w3l-bootstrap-header .social-top li a {
@@ -10293,7 +10293,8 @@ button.owl-next {
   text-transform: capitalize;
   max-width: 700px;
   font-weight: 500;
-  color: #fff; }
+  color: #fff;
+   }
 
 .w3l-main-slider p.banner-para {
   color: #eaeaea;
@@ -11769,7 +11770,24 @@ p.stats-text {
   .w3l-services-1 a.feature-link:hover span.fa {
     padding-left: 3px;
     transition: 0.3s ease-out; }
-  @media (max-width: 800px) {
+  
+    .w3l-services-1 a.getquota {
+      display: inline-block;
+      font-size: 17px;
+      line-height: 25px;
+      margin-top: 20px;
+      color: #17449e;
+      font-weight: 400;
+      text-transform: capitalize; }
+    .w3l-services-1 a.getquota:hover {
+      color: var(--text-hover-color); }
+    .w3l-services-1 a.getquota span.fa {
+      transition: 0.3s ease; }
+    .w3l-services-1 a.getquota:hover span.fa {
+      padding-left: 3px;
+    transition: 0.3s ease-out; }
+
+    @media (max-width: 800px) {
     .w3l-services-1 .services-title h3 {
       font-size: 40px;
       line-height: 45px; } }
@@ -11790,9 +11808,10 @@ p.stats-text {
       margin-top: 25px; }
     .w3l-services-1 .service-info p,
     .w3l-services-1 .services-title p {
-      font-size: 16px; } }
+      font-size: 16px; } 
+    }
 
-/*-- quote --*/
+      /*-- quote --*/
 .w3l-grid-quote {
   text-align: center; }
 
