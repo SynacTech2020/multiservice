@@ -2967,7 +2967,7 @@
 			'<span aria-label="' + 'Next' + '"> <span class="fa fa-angle-right"></span> </span>'
 		],
 		navSpeed: false,
-		navElement: 'button type="button" role="presentation"',
+		// navElement: 'button type="button" role="presentation"',
 		navContainer: false,
 		navContainerClass: 'owl-nav',
 		navClass: [
@@ -2980,7 +2980,7 @@
 		dots: true,
 		dotsEach: false,
 		dotsData: false,
-		dotsSpeed: false,
+		dotsSpeed: true,
 		dotsContainer: false
 	};
 
