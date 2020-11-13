@@ -11643,6 +11643,12 @@ p.stats-text {
     color: var(--heading-color);
     display: inline-block;
     margin-bottom: 2px; }
+    .w3l-teams-32-main a.teamofams {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--heading-color);
+      display: inline-block;
+      margin-bottom: 2px; }
   .w3l-teams-32-main .column-19 img {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px; }
@@ -11703,7 +11709,9 @@ p.stats-text {
       font-size: 20px; } }
   @media (max-width: 375px) {
     .w3l-teams-32-main a.title-team-32 {
-      font-size: 18px; } }
+      font-size: 18px; }
+      .w3l-teams-32-main a.teamofams {
+        font-size: 16px; } }
 
 .w3l-features-7 .features h5 a {
   font-size: 24px;
