@@ -2969,11 +2969,11 @@
 		navSpeed: false,
 		navElement: 'button type="button" role="presentation"',
 		navContainer: false,
-		// navContainerClass: 'owl-nav',
-		// navClass: [
-		// 	// 'owl-prev',
-		// 	// 'owl-next'
-		// ],
+		navContainerClass: 'owl-nav',
+		navClass: [
+			'owl-prev',
+			'owl-next'
+		],
 		slideBy: 1,
 		dotClass: 'owl-dot',
 		dotsClass: 'owl-dots',
