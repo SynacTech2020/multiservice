@@ -9851,7 +9851,7 @@ h3.title {
 .w3l-bootstrap-header a.navbar-brand {
   color: #17449e;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 18px;
   padding: 0;
   margin: 0; }
 
@@ -9957,9 +9957,9 @@ h3.title {
   .w3l-bootstrap-header .social-top {
     text-align: center; }
   .w3l-bootstrap-header a.navbar-brand img {
-    width: 50px; }
+    width: 20px; }
   .w3l-bootstrap-header a.navbar-brand {
-    font-size: 20px; } }
+    font-size: 18px; } }
 
 @media (max-width: 384px) {
   .w3l-bootstrap-header .social-top li a {
@@ -9968,7 +9968,7 @@ h3.title {
 
 @media (max-width: 320px) {
   .w3l-bootstrap-header a.navbar-brand {
-    font-size: 26px; }
+    font-size: 18px; }
   .w3l-bootstrap-header .navbar-brand {
     margin-right: 0rem; } }
 
@@ -11181,7 +11181,8 @@ p.stats-text {
   grid-template-columns: 15px 1fr auto;
   justify-content: stretch;
   grid-gap: 10px;
-  align-items: center; }
+  /* align-items: center;  */
+} 
 
 .w3l-medpill-footer .footer-list-28 ul li a:hover {
   color: var(--heading-color); }
