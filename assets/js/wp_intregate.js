@@ -10,12 +10,25 @@ function send_data() {
 
     
 function add_product(param1) {
+        if (search(param1)==0){
        var i = sessionStorage.length
         sessionStorage.setItem("products"+i,param1);
         console.log(sessionStorage)
         alert('hi')
+    }else{
+        alert('This Product is already Added in Quotation List.')
     }
 
-
+}
  
+function search(param2) {
+    var flag=0;
+    for (let index = 0; index < sessionStorage.length; index++) {
+        if(param2==sessionStorage.getItem('products'+index)){
+            flag=flag+1
+        }
+    }
+    return flag
+    
+}
     
