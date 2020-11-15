@@ -28,7 +28,6 @@ function search(param2) {
             flag=flag+1
         }
     }
-    return flag
-    
+    return flag  
 }
     
