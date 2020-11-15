@@ -375,6 +375,12 @@ h6, .h6 {
   @media (max-width: 1200px) {
     .display-2 {
       font-size: calc(1.675rem + 5.1vw) ; } }
+/*responsive logo*/
+.responsive {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
 
 .display-3 {
   font-size: 4.5rem;
@@ -10583,7 +10589,7 @@ ul.icon-rounded.address li p span.fa {
     max-width: 90%;
     width: 90%; }
   h2.logo img {
-    width: 50px; }
+    width: 70px; }
   h2.logo {
     font-size: 30px; } }
 
