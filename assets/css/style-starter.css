@@ -375,6 +375,12 @@ h6, .h6 {
   @media (max-width: 1200px) {
     .display-2 {
       font-size: calc(1.675rem + 5.1vw) ; } }
+/*responsive logo*/
+.responsive {
+  width: 100%;
+  max-width: 70px;
+  height: auto;
+}
 
 .display-3 {
   font-size: 4.5rem;
@@ -437,7 +443,8 @@ mark,
     content: "\2014\00A0"; }
 
 .img-fluid {
-  max-width: 100%;
+  width: 100%;
+  max-width: 80px;
  height: auto; }
 
 .img-thumbnail {
