@@ -10218,7 +10218,7 @@ h3.title {
   left: 0;
   right: 0;
   bottom: 30px;
-  background: none; }
+  background: rgb(238, 240, 240);; }
 
 .owl-theme .owl-nav [class*=owl-] {
   color: #fff;
