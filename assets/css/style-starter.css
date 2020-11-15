@@ -10522,6 +10522,12 @@ h2.logo {
   padding: 0;
   margin: 0; }
 
+/* for logo*/
+.logoimg {
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;
+}
 h5.widget-title {
   font-size: 22px;
   font-weight: 700;
