@@ -18,7 +18,7 @@
   <section class="w3l-bootstrap-header">
     <nav class="navbar navbar-expand-md navbar-light py-3">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="assets/images/7.png" class="img-fluid" width="30px">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/50.png" class="img-fluid" width="70px">
           Aradhana Multi Services</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,9 +27,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
+            
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
@@ -68,7 +66,7 @@
 
         <div class="modal-body">
           <div class="modal__content">
-            <h2 class="logo"><img src="assets/images/7.png" class="img-fluid"> Aradhana Multi Services</h2>
+            <h2 class="logo"><img src="assets/images/50.png" class="img-fluid"> Aradhana Multi Services</h2>
             <!-- if logo is image enable this   
           <h2 class="logo">
             <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -103,7 +101,7 @@
               <h5 class="widget-title">Contact Us</h5>
               <ul class="icon-rounded address">
                 <li>
-                  <p> H No. 1058 Mhada colony, Murtinagr, <br>N2, Aurangabad, Maharashtra 431001</p>
+                  <p> H No. 1058 Mhada colony, Murtijapur, <br>N-2, Aurangabad, Maharashtra 431001</p>
                 </li>
                 <li class="mt-3">
                   <p><span class="fa fa-phone"></span> <a href="tel:+91 9011599027">+91 9011599027</a></p>
@@ -148,20 +146,20 @@
       <h3 class="title mb-4">Drop Us a Message</h3>
       <div class="row">
         <div class="col-md-8 contact-form">
-          <form>
-            <input type="text" class="form-control" name="w3lName" placeholder="Name" /><br />
-            <input type="email" class="form-control" name="w3lSender" placeholder="E-mail" /><br />
-            <input type="text" class="form-control" name="w3lSubject" placeholder="Equipment Name" /><br />
+          <form id="ams" name="ams">
+            <input type="text" class="form-control" name="name" placeholder="Name" /><br />
+            <input type="email" class="form-control" name="sender" placeholder="E-mail" /><br />
+            <input type="text" class="form-control" name="subject" placeholder="Equipment Name" /><br />
             <div class="">
-              <button class="btn btn-primary btn-style" onclick="send_data()" type="submit">Submit now</button>
+              <button class="btn btn-primary btn-style" onclick="send_data()">Submit now</button>
             </div>
           </form>
         </div>
         <div class="col-md-4 mt-md-0 mt-5 w3-contact-address">
           <b>Address:</b>
           <p>H No. 1058 ,</p>
-          <p>Mhada colony, Murtinagr,</p>
-          <p>N2, Aurangabad,</p>
+          <p>Mhada colony, Murtijapur,</p>
+          <p>N-2, Aurangabad,</p>
           <p>Maharashtra 431001.</p>
           <br />
           <b>Phone:</b>
@@ -198,7 +196,7 @@
               <h6 class="footer-title-28">Contact information</h6>
               <ul class="address">
                 <li>
-                  <p> H No. 1058 Mhada colony, Murtinagr <br>N2, Aurangabad, Maharashtra 431001</p>
+                  <p> H No. 1058 Mhada colony, Murtijapur <br>N-2, Aurangabad, Maharashtra 431001</p>
                 </li>
                 <li class="mt-4">
                   <p><span class="fa fa-phone"></span> <a href="tel:+91 9011599027">+91 9011599027</a></p>
@@ -228,7 +226,7 @@
                 <li><a href="services.html">Oxygen Pipeline</a></li>
                 <li><a href="services.html">Cubical Curtains & IV Hangers</a></li>
                 <li><a href="services.html">OT Table</a></li>
-                <li><a href="services.html">OT light installation service & maintenance</a></li>
+                <li><a href="services.html">OT Light </a></li>
                 <li><a href="services.html">Hospital Furniture</a></li>
 
               </ul>
@@ -297,15 +295,17 @@
   </script> -->
 
   <!-- video popup -->
-  <!-- <script>
-    $('#notify').change(function () {
-      if ($('#notify').is("Active")) {
-        $('body').css('overflow', 'hidden');
-      } else {
-        $('body').css('overflow', 'auto');
-      }
-    });
-  </script> -->
+  <script>
+    // const form = document.forms['ams']
+    // form.addEventListener('submit', e => {
+    //   e.preventDefault()
+    //   var form2 = new FormData(form)      
+    //   fetch(scriptURL, { method: 'POST', body: form2})
+    //     .then((response) => {setTimeout(function(){ send_data(); }, 3000);})
+    //     .catch(error => console.error('Error!', error.message))
+    // })
+    
+  </script>
   <!-- //video popup -->
 
   <script src="assets/js/owl.carousel.js"></script>
