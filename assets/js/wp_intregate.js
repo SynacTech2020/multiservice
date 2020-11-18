@@ -50,5 +50,5 @@ function send_quote(){
     }
     
     sessionStorage.clear()
-    location.replace('https://aradhanamultiservices.com/')
+    location.reload()
 }
