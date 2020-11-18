@@ -5,7 +5,7 @@
 function send_data() {
     var form = new FormData(document.forms['ams'] )
     var msg = "Hi, I am "+form.get('name')+". I would like to contact you regarding my requirements about "+form.get('subject')+". Please mail me details at "+form.get('sender')+"."
-    window.open(`https://wa.me/919011599027?text=${msg}`, '_blank');
+    window.open(`https://wa.me/919011599027?text=${msg}`);
     location.reload()
     }
 
@@ -43,10 +43,10 @@ function send_quote(){
     // console.log(form.get('Additional'))
     if(form.get('Additional')!==""){
     var msg = "Hi, I am "+form.get('Name')+". I have requirements of "+quote_list+" also my additional requirements are "+form.get('Additional')+". You can mail me the details at "+form.get('Email')+" or Call me at "+form.get('Mobile')+"."
-    window.open(`https://wa.me/919011599027?text=${msg}`, '_blank');
+    window.open(`https://wa.me/919011599027?text=${msg}`);
     }else{
         var msg = "Hi, I am "+form.get('Name')+". I have requirements of "+quote_list+". You can mail me the details at "+form.get('Email')+" or Call me at "+form.get('Mobile')+"."
-        window.open(`https://wa.me/919011599027?text=${msg}`, '_blank');
+        window.open(`https://wa.me/919011599027?text=${msg}`);
     }
     
     sessionStorage.clear()
