@@ -15,6 +15,7 @@ function add_product(param1) {
        var i = sessionStorage.length
         sessionStorage.setItem("products"+i,param1);
         console.log(sessionStorage)
+        alert('Added to Quotation List.')
     }else{
         alert('This Product is already Added in Quotation List.')
     }
