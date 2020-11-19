@@ -45,12 +45,12 @@ function send_quote(){
     if(form.get('Additional')!==""){
     var msg = "Hi, I am "+form.get('Name')+". I have requirements of "+quote_list+" also my additional requirements are "+form.get('Additional')+". You can mail me the details at "+form.get('Email')+" or Call me at "+form.get('Mobile')+"."
     window.open(`https://wa.me/919011599027?text=${msg}`);
-    // sessionStorage.clear()
+    sessionStorage.clear()
     // location.reload()
     }else{
         var msg = "Hi, I am "+form.get('Name')+". I have requirements of "+quote_list+". You can mail me the details at "+form.get('Email')+" or Call me at "+form.get('Mobile')+"."
         window.open(`https://wa.me/919011599027?text=${msg}`);
-        // sessionStorage.clear()
+        sessionStorage.clear()
     // location.reload()
     }
     
