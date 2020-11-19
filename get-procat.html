@@ -9,12 +9,18 @@
   <title>Aradhana Multi Services</title>
 
   <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700&display=swap" rel="stylesheet">
-
+ 
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style-starter.css">
+  <style>
+    btnspecial:hover{
+      color: blue;
+    }
+  </style>
 </head>
 
 <body>
+  
   <section class="w3l-bootstrap-header">
     <nav class="navbar navbar-expand-md navbar-light py-3">
       <div class="container">
@@ -70,18 +76,19 @@
       <!--<h3 class="title mb-4">Add To Cart</h3>-->
       <div class="row">
         <div class="col-md-8 contact-form">
-          <form action="https://sendmail.w3layouts.com/submitForm" method="post">
-            <input type="text" class="form-control" name="w3lName" placeholder="Name" /><br />
-            <input type="number" class="form-control" name="w3lSubject" placeholder="Mobile Number" /><br />
-            <input type="email" class="form-control" name="w3lSender" placeholder="E-mail" /><br />
-            <input type="text" class="form-control" name="w3lSubject" placeholder="Equipment Name" /><br />
-            <input type="text" class="form-control" name="w3lSubject" placeholder="Equipment Quantity" /><br />
-            <input type="text" class="form-control" name="w3lSubject" placeholder="Your requirements" /><br />
-            <textarea class="form-control" name="w3lMessage" placeholder="Others"
-              style="height:120px;"></textarea><br />
-            <div class="">
-              <button class="btn btn-primary btn-style" type="submit">Submit now</button>
-            </div>
+          <form action="" id="ams_q" name="ams_q" method="post">
+            <button id="btnspecial" class="btn btn-style"><a  href="index.html" style="color:blue;" >More Products</a></button><br /><br />  
+            <input type="text" class="form-control" name="Name" placeholder="Name" required/><br />
+            <input type="text" class="form-control" name="Mobile" placeholder="Mobile Number" required/><br />
+            <input type="email" class="form-control" name="Email" placeholder="E-mail" required/><br />
+            <label type="text" id="equip" class="form-control-plaintext" name="equip"></label><br />
+            <input type="text" class="form-control" name="Additional" placeholder="Please add any Additional requirements if you want." /><br />
+              <!-- <textarea class="form-control" name="w3lMessage" placeholder="Others"
+                style="height:120px;"></textarea><br /> -->
+            
+              <button class="btn btn-primary btn-style" onclick="send_quote()" type="submit">Submit now</button>
+            
+            
           </form>
         </div>
         <div class="col-md-4 mt-md-0 mt-5 w3-contact-address">
@@ -96,7 +103,7 @@
           <p><span class="fa fa-phone"></span> <a href="tel:+91 7447497912">+91 7447497912</a></p>
           <br />
           <b>Email:</b>
-          <p><a href="mailto:aaradhnamultiservices@mail.com">aaradhnamultiservices@mail.com</a></p>
+          <p><a href="mailto:aaradhnamultiservices@gmail.com">aaradhnamultiservices@gmail.com</a></p>
         </div>
       </div>
     </div>
@@ -194,7 +201,7 @@
                 <!-- </li>
                 <li> -->
                   <p><span class="fa fa-envelope"></span> <a
-                      href="mailto:aaradhnamultiservices@mail.com">aaradhnamultiservices@mail.com</a></p>
+                      href="mailto:aaradhnamultiservices@gmail.com">aaradhnamultiservices@gmail.com</a></p>
                 </li>
               </ul>
             </div>
@@ -324,9 +331,20 @@
     });
   </script>-->
   <!-- disable body scroll which navbar is in active -->
-
+<script src="assets/js/wp_intregate.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-
+<script>
+  var quote_list='';
+  for (let index = 0; index < sessionStorage.length; index++) {
+    var p = sessionStorage.getItem('products'+index)
+    quote_list=quote_list+p+", "
+  }
+  if (sessionStorage.length==0) {
+    document.getElementById('equip').innerHTML="Select a Product.";
+  }else{
+    document.getElementById('equip').innerHTML=quote_list;
+  }
+    </script>
 </body>
 
 </html>
